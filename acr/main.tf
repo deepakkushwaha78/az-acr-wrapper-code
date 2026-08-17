@@ -1,5 +1,5 @@
 module "acr" {
-  source = "git::https://github.com/deepakkushwaha78/azure-pvt-acr-module.git//terraform-azure-acr?ref=main"
+  source = "git::ssh://git@github.com/deepakkushwaha78/azure-pvt-acr-module.git//terraform-azure-acr?ref=main"
 
   acr_name                      = local.acr_name
   resource_group_name           = var.resource_group_name
