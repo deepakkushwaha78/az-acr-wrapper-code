@@ -1,5 +1,5 @@
 module "acr" {
-  source = "git::https://deepakkushwaha78:${var.GIT_TOKEN}@github.com/deepakkushwaha78/azure-pvt-acr-module.git//terraform-azure-acr?ref=main"
+  source = "git::https://deepakkushwaha78:GIT_TOKEN@github.com/deepakkushwaha78/azure-pvt-acr-module.git//terraform-azure-acr?ref=main"
 
   acr_name                      = local.acr_name
   resource_group_name           = var.resource_group_name
